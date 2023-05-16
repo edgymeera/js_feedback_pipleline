@@ -29,3 +29,54 @@
 // console.log(longString.endsWith("meera"));
 // console.log(longString.length);
 // console.log(longString.includes("meera"));
+
+// console.log(3 + "3"); //33
+// console.log(3 * "3"); //9
+
+// console.log(eval("2 + 2"));
+// console.log(2 + parseInt("2"));
+// console.log(2 + parseInt("ksjeiwfhf")); //NaN - not a number
+
+// var toBeEvaluated = eval(""); // to test, write 3 + 3, or \"qwerty\", or false
+// if (isNaN(toBeEvaluated) == true) 
+// {
+
+//     console.log("I cannot proceed")
+
+//     if (typeof(toBeEvaluated) == "string") 
+//     {
+
+//         console.log(toBeEvaluated[toBeEvaluated.length-1])
+
+//     }
+
+// }
+// else if (isNaN(toBeEvaluated) == false)
+// {
+
+//     console.log(toBeEvaluated * 3)
+
+// }
+// else 
+// {
+
+//     console.log(toBeEvaluated)
+
+// }
+
+// // Another way
+// var toBeEvaluated = eval("false"); // to test, write 3 + 3, or \"qwerty\", or false
+// if (typeof(toBeEvaluated) == "string") 
+// {
+
+//     var lastIndex = toBeEvaluated.length - 1;
+//     console.log(toBeEvaluated.charAt(lastIndex))
+
+// }
+// else
+// {
+
+//     var valueToPrint = isNaN(toBeEvaluated) ? "I cannot proceed" : (typeof toBeEvaluated == "number") ? parseInt(toBeEvaluated) * 3 : toBeEvaluated;
+//     console.log(valueToPrint)
+
+// }
