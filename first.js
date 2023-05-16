@@ -80,3 +80,46 @@
 //     console.log(valueToPrint)
 
 // }
+
+// currentDay = "Thursday"
+// switch(currentDay)
+// {
+
+//     case "Saturday":
+//         console.log("woohoo");
+
+//     case "Sunday":
+//         console.log("go back to sleep");
+//         break;
+    
+//     case "Friday":
+//         console.log("weekend!");
+//         break;
+    
+//     default:
+//         console.log("time to work");
+//         break;
+    
+// }
+
+// for (i = 0; i <= 100; i++)
+// {
+//     if (i % 2 == 0)
+//     {
+//         console.log(i)
+//     }
+// }
+
+// for (i = 0; i <= 100; i += 2)
+// {
+//     console.log(i)
+// }
+
+// while (i <= 100)
+// {
+//     if (i % 2 == 0)
+//     {
+//         console.log(i)
+//     }
+//     i++
+// }
