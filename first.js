@@ -1,5 +1,6 @@
 // console.log("This is log");
 
+
 // console.log(typeof numberOfStudents); //undefined
 // var numberOfStudents = 25;
 // console.log(typeof numberOfStudents); //number
@@ -8,12 +9,14 @@
 // numberOfStudents = "nineteen"
 // console.log(typeof numberOfStudents); //string
 
+
 // var1 = 23;
 // console.log(typeof var1); 
 // var2 = "hello";
 // console.log(typeof var2); 
 // var3 = null;
 // console.log(typeof var3);
+
 
 // myName = "Meera";
 // myAge = "23";
@@ -24,6 +27,7 @@
 // console.log(myName.indexOf("e"));
 // console.log(myName.lastIndexOf("e"));
 
+
 // longString = "hey there my name is meera";
 // console.log(longString.endsWith("there"));
 // console.log(longString.endsWith("meera"));
@@ -33,9 +37,11 @@
 // console.log(3 + "3"); //33
 // console.log(3 * "3"); //9
 
+
 // console.log(eval("2 + 2"));
 // console.log(2 + parseInt("2"));
 // console.log(2 + parseInt("ksjeiwfhf")); //NaN - not a number
+
 
 // var toBeEvaluated = eval(""); // to test, write 3 + 3, or \"qwerty\", or false
 // if (isNaN(toBeEvaluated) == true) 
@@ -64,6 +70,7 @@
 
 // }
 
+
 // // Another way
 // var toBeEvaluated = eval("false"); // to test, write 3 + 3, or \"qwerty\", or false
 // if (typeof(toBeEvaluated) == "string") 
@@ -80,6 +87,7 @@
 //     console.log(valueToPrint)
 
 // }
+
 
 // currentDay = "Thursday"
 // switch(currentDay)
@@ -102,6 +110,7 @@
     
 // }
 
+
 // for (i = 0; i <= 100; i++)
 // {
 //     if (i % 2 == 0)
@@ -110,10 +119,12 @@
 //     }
 // }
 
+
 // for (i = 0; i <= 100; i += 2)
 // {
 //     console.log(i)
 // }
+
 
 // while (i <= 100)
 // {
@@ -123,3 +134,250 @@
 //     }
 //     i++
 // }
+
+
+// var myArray = [1, 2, 3];
+// console.log(myArray);
+// myArray[0] = 5
+// console.log(myArray);
+// myArray = 7;
+// console.log(myArray);
+
+
+// myArray = [1, 2, 3];
+// myNewArray = myArray;
+// console.log(myNewArray);
+// myArray[1] = 6;
+// console.log(myNewArray); // The new array will change when we change the old array - because they would have the same reference
+
+
+// // To prevent that from happening
+// myArray = [1, 2, 3];
+// myNewArray = [...myArray];
+// console.log(myNewArray);
+// myArray[1] = 6;
+// console.log(myNewArray);
+
+
+// var myArr = [1, 2, "Meera", true];
+// var myNewArr = [...myArr];
+// for (var i = 0; i < myArr.length; i++)
+// {
+
+//     console.log(myArr[i])
+
+// }
+
+
+// studentNames = ["Meera", "Alya", "Shumookh", "Fatima"]
+// for (i = 0; i < studentNames.length; i++) 
+// {
+
+//    toPrint = "Student " + studentNames[i] + " is number " + i.toString();
+//    console.log(toPrint);
+
+// }
+
+
+// numbersArray = [1, 2, 3];
+// reveresedArray = [];
+// x = 0;
+// for (i = numbersArray.length-1; i >= 0; i--) 
+// {
+
+//     reveresedArray[x] = numbersArray[i];
+//     x++
+
+//     //reveresedArray.push(numbersArray[i]); // Another way to do it
+
+// }
+// console.log(reveresedArray);
+
+
+// lettersArray = ["x", "y", "z"];
+// reveresedLetters = [];
+// for (i = lettersArray.length-1; i >= 0; i--) 
+// {
+
+//    newIndex = lettersArray.length - 1 - i;
+//    reveresedLetters[newIndex] = lettersArray[i];
+
+// }
+// console.log(reveresedLetters);
+
+
+// nameArray = ["Meera", "Alya", "Shumookh", "Fatima"];
+// console.log(nameArray.includes("Alya"));
+// console.log(nameArray.map(firstName => "Ms. " + firstName));
+
+
+// function hello() 
+// {
+
+//     alert("HELLO THERE");
+
+// }
+// hello();
+
+
+// function helloName(name)
+// {
+    
+//     alert("Hello, " + name);
+
+//     return "You are the best";
+
+// }
+// print = helloName("Meera");
+// console.log(print) // We need to return something otherwise it will return undefined
+
+
+// function arrayConverter(array)
+// {
+
+//     newArray = []
+
+//     for (i = 0; i < array.length; i++)
+//     {
+
+//         if (typeof(array[i]) === "string")
+//         {
+//             newArray[i] = array[i].toUpperCase();
+//         }
+//         else if (typeof(array[i]) === "number")
+//         {
+//             newArray[i] = array[i] ** 2;
+//         }
+//         else
+//         {
+//             newArray[i] = null;
+//         }
+        
+//     }
+
+//     return newArray;
+
+// }
+// testArray = ["hello", 2, false];
+// console.log(arrayConverter(testArray));
+
+
+// var courseInfo = new Object();
+// courseInfo["topic"] = "javascript";
+// courseInfo["duration"] = "5 days";
+// courseInfo["numOfStudents"] = 25;
+// courseInfo["students"] = ["momo", "aoao", "shosho"];
+// console.log(courseInfo);
+// for(key in courseInfo)
+// {
+
+//     var value = courseInfo[key]
+//     console.log(key, "=", value);
+
+// }
+
+
+
+// function hello()
+// {
+
+// }
+// var hello = function()
+// {
+
+//     console.log("Hello world")
+
+// }
+// courseInfo["hello"] = hello;
+// courseInfo["hello"]();
+// courseInfo.hello();
+
+
+// var work = new Object();
+// work.place = "Edge";
+// console.log(work.place);
+// work.place = "Abu Dhabi";
+// console.log(work.place);
+
+
+// randomArr = [1,2,3,4,5];
+// for (i in randomArr)  // "in" iterates the indexes, one by one
+// {
+
+//     console.log(i);
+//     console.log(randomArr[i]);
+
+// }
+
+
+// randomArr = [1,2,3,4,5];
+// for (i of randomArr)  // "of" iterates the values, one by one
+// {
+
+//     console.log(i);
+
+// }
+
+
+// // Another way to create objects
+// courseInfo = 
+// {
+
+//     topic: "javascript",
+//     duration: 5,
+//     numOfStudents: 25,
+
+// }
+
+
+// function iterateObjects(objArray) 
+// {
+
+//     var newArray = [];
+
+//     // Each iteration is an object
+//     for (var obj of objArray) 
+//     {
+
+//         var keyStr = "";
+
+//         // Each iteration is a key
+//         for (var key in obj) 
+//         {
+
+//             keyStr += key + " ";
+
+//         }
+//         newArray.push(keyStr)
+
+//     }
+
+//     return newArray;
+
+// }
+// testArray = [{name: "Meera", age: 45}, {time: 24, size: 33}];
+// console.log(iterateObjects(testArray));
+
+
+// function nullValues(objArray) 
+// {
+
+//     for (var obj of objArray)
+//     {
+
+//         for (var key in obj)
+//         {
+
+//             obj[key] = null;
+
+//         }
+
+//     }
+
+//     return objArray;
+
+// }
+// testArray = [{name: "Meera", age: 45}, {time: 24, size: 33}];
+// console.log(nullValues(testArray));
+
+
