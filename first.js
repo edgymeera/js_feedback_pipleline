@@ -381,3 +381,177 @@
 // console.log(nullValues(testArray));
 
 
+// var person1 = {firstname: "Meera", age: 22};
+// var person2 = {...person1, firstname: "Alya", score: 100};
+// person1.age = 23;
+// console.log("Person 1:", person1);
+// console.log("Person 2:", person2);
+
+
+// var arr1 = ["s", "o", "s"];
+// var arr2 = [...arr1, "help"];
+// console.log("Array 1:", arr1);
+// console.log("Array 2:", arr2);
+
+
+// var target = { a: 1, b: 2 };
+// var source = { b: 3, c: 4 };
+// const mergedObject = Object.assign(target, source);
+// console.log(mergedObject);
+// // Output: { a: 1, b: 3, c: 4 }
+// console.log(target);
+// // Output: { a: 1, b: 3, c: 4 }
+
+
+// const target = {};
+// const source = { a: 1, b: 2 };
+// const mergedObject = Object.assign(target, source);
+// console.log(mergedObject);
+// // Output: { a: 1, b: 2 }
+// console.log(target);
+// // Output: { a: 1, b: 2 }
+
+
+// var error = new Error("This is my new error");
+// console.log(error);
+// throw error; // If an error is thorwn, everything under it will not continue and the execution will stop
+
+
+// try 
+// {
+
+//     var error = new Error("This is my new error");
+//     throw error; // throw error so we can catch it, or the code will continue executing with the error
+
+// }
+// catch(e)
+// {
+
+//     console.log("Error has been caught");
+//     console.log(e)
+
+// }
+// finally
+// {
+
+// console.log("I will always be executed!");
+
+// }
+// console.log("I'm done")
+
+
+// var pi = 3.14159;
+// pi.toFixed(10000); // RangeError
+
+
+// function foo() {
+//     bar++ // ReferenceError
+// }
+
+
+// var foo = {};
+// foo.bar(); // TypeError
+
+
+// var userInput = prompt("Please tell me what you need");
+// console.log(userInput);
+
+
+// function getNamesFromTheUser(message) 
+// {
+
+//     var userInput = prompt(message);
+//     var namesList = userInput.split(",");
+
+//     if (namesList.length < 2) 
+//     {
+//         throw new Error("User has provided less than two names!");
+//     }
+
+//     return namesList;
+
+// }
+// try 
+// {
+
+//     var names = getNamesFromTheUser("Please enter comma seperated list of users");
+//     console.log("We have got the names:", names);
+
+// }
+// catch (e)
+// {
+
+//     try 
+//     {
+
+//         var names = getNamesFromTheUser("You didn't provide what was needed, please try again");
+//         console.log("We have got the names:", names);
+
+//     }
+//     catch (e)
+//     {
+
+//         alert("Sorry, but you dont want to help me...");
+
+//     }
+
+// }
+// console.log("We are done!");
+
+
+// function getNumbersFromUser(message)
+// {
+
+//     var userInput = prompt(message);
+//     var strNumbersList = userInput.split(",");
+//     var numbersList = [];
+
+//     for(strnum of strNumbersList)
+//     {
+
+//         num = parseInt(strnum);
+
+//         if (isNaN(num))
+//         {
+//             throw new TypeError("TypeError - This is not a number");
+//         }
+//         else
+//         {
+//             numbersList.push(num);
+//         }
+
+//     }
+
+//     alert("Thank you for your help");
+//     return numbersList;
+
+// }
+// try
+// {
+
+//     var numbers = getNumbersFromUser("Please enter comma seperated list of numbers");
+//     console.log("List of numbers:", numbers);
+
+// }
+// catch(e)
+// {
+
+//     try 
+//     {
+    
+//         var numbers = getNumbersFromUser("You need to enter numbers only!");
+//         console.log("List of numbers:", numbers);
+
+    
+//     }
+//     catch (e)
+//     {
+    
+//         alert(e.message);
+    
+//     }
+
+// }
+// console.log("We are done!");
+
+
