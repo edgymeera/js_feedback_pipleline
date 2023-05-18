@@ -503,6 +503,10 @@
 // {
 
 //     var userInput = prompt(message);
+//     if (!userInput.length) // If no user input was provided
+//     {
+//         console.warn("User input is empty!")
+//     }
 //     var strNumbersList = userInput.split(",");
 //     var numbersList = [];
 
@@ -536,6 +540,8 @@
 // catch(e)
 // {
 
+//     console.error("Something is wrong!")
+
 //     try 
 //     {
     
@@ -546,7 +552,8 @@
 //     }
 //     catch (e)
 //     {
-    
+
+//         console.error("Something is wrong!")
 //         alert(e.message);
     
 //     }
@@ -555,3 +562,247 @@
 // console.log("We are done!");
 
 
+// function createSandwich(ingredients)
+// {
+
+//     if (!ingredients)
+//     {
+
+//         console.log("Sorrym cannot do it");
+//         return;
+
+//     }
+//     console.log("I'm creating the sandwich with these ingredients: ", ingredients);
+
+// }
+// function getIngredients(createSand)
+// {
+
+//     console.log("Going to the market");
+//     console.log("Buying stuff...");
+//     var ingredients = ["tomato", "bread", "mayo"];
+
+//     try
+//     {
+
+//         createSand(ingredients);
+
+//     }
+//     catch(e)
+//     {
+
+//         console.log("cannot create");
+
+//     }
+
+// }
+// getIngredients(createSandwich);
+
+
+// function helloWorld()
+// {
+
+//     console.log("Hello World");
+
+// }
+// console.log("Step1");
+// var timerID = setTimeout(helloWorld, 3000);
+// console.log("Timer ID:", timerID);
+// console.log("Step2");
+
+
+// function helloWorld()
+// {
+
+//     console.log("Hello World");
+
+// }
+// console.log("Step1");
+// var timerID = setTimeout(helloWorld, 0);
+// console.log("Timer ID:", timerID);
+// console.log("Step2");
+
+
+// function helloWorld()
+// {
+
+//     console.log("Hello World", counter);
+//     if (counter == 5)
+//     {
+
+//         clearInterval(intervalID);
+
+//     }
+//     counter+=1
+
+// }
+// counter = 0;
+// var intervalID = setInterval(helloWorld, 1000);
+
+
+// function getSeconds()
+// {
+
+//     var strSeconds = prompt("Please enter a number of seconds:");
+//     var seconds = parseInt(strSeconds);
+
+//     if (isNaN(seconds))
+//     {
+
+//         throw new TypeError("Seconds can only be a number!");
+
+//     }
+//     else if (seconds < 1)
+//     {
+
+//         throw new RangeError("Number should be larger than 0!");
+
+//     }
+//     else
+//     {
+
+//         return seconds;
+
+//     }
+
+// }
+// function getMessage(message)
+// {
+
+//     var message = prompt("Please enter a message:");
+//     return message;
+
+// }
+// function main()
+// {
+
+//     try 
+//     {
+
+//         var sec = getSeconds();
+//         var msg = getMessage();
+//         setInterval(function(){console.log(msg)}, sec * AMOUNT_OF_MS_IN_SECONDS);
+
+//     }
+//     catch (e)
+//     {
+
+//         alert(e.message)
+
+//     }
+
+// }
+// var AMOUNT_OF_MS_IN_SECONDS = 1000;
+// main();
+
+
+// // Synchronous Code
+// function callbackFunction()
+// {
+//     console.log("Hello");
+// }
+// function executeCallback(callbackFunc)
+// {
+//     console.log("I'm executing now");
+//     callbackFunction();
+// }
+// console.log("Step 1");
+// executeCallback(callbackFunction);
+// console.log("Step 2");
+
+
+// // Asynchronous Code
+// function callbackFunction()
+// {
+//     console.log("Hello");
+// }
+// function executeCallback(callbackFunc)
+// {
+//     console.log("I'm executing now");
+//     callbackFunction();
+// }
+// console.log("Step 1");
+// setTimeout(callbackFunction, 0);
+// console.log("Step 2");
+
+
+// // Asynchronous Code
+// function doSomethingVeryHeavy()
+// { 
+
+//     for(var i = 0; i < 10000000000; i++)
+//     {
+
+//     }
+//     console.log("Done");
+
+// }
+// console.log("Step 1");
+// setTimeout(doSomethingVeryHeavy, 0)
+// console.log("Step 2");
+// prompt("Write something:")
+
+
+// // Promise
+// console.log("Step 1")
+// function promiseHandler(resolve, reject)
+// {
+
+//     setTimeout(function()
+//     {
+//         console.log("Something");
+//         resolve(5);
+//     }, 10000);
+
+// }
+// function resolveHandler(number)
+// {
+
+//     console.log("I'm the resolver, and this is the value:", number);
+
+// }
+// var promise = new Promise(promiseHandler);
+// promise.then(resolveHandler); // When promise is successful
+// console.log("Step 2");
+
+
+persons = [];
+var personsNumberStr = prompt("How many persons you want us to create?");
+var personsNumber = parseInt(personsNumberStr);
+if (isNaN(personsNumber))
+{
+
+    throw new TypeError("It can only be a number!");
+
+}
+for (i = 0; i < personsNumber; i++)
+{
+
+    console.log(i);
+
+    var personFirst = prompt("Enter first name:");
+    if (personsFirst.length() > 25)
+    {
+
+        throw new RangeError("It can only be up to 25 characters");
+
+    }
+
+    var personLast = prompt("Enter last name:");
+    if (personsLast.length() > 50)
+    {
+
+        throw new RangeError("It can only be up to 50 characters");
+
+    }
+
+    var personAgeStr = prompt("Enter age:");
+    var personsAge = parseInt(personAgeStr);
+    if (personsAge < 21)
+    {
+
+        throw new RangeError("Age should be larger than 21");
+
+    }
+
+}
