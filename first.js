@@ -766,43 +766,104 @@
 // console.log("Step 2");
 
 
-persons = [];
-var personsNumberStr = prompt("How many persons you want us to create?");
-var personsNumber = parseInt(personsNumberStr);
-if (isNaN(personsNumber))
-{
+// function getPositiveNumber(message)
+// {
 
-    throw new TypeError("It can only be a number!");
+//     var personsNumberStr = prompt(message);
+//     var personsNumber = parseInt(personsNumberStr);
+//     if (isNaN(personsNumber))
+//     {
+    
+//         throw new TypeError("It can only be a number!");
+    
+//     }
+//     else if (personsNumber < 0)
+//     {
 
-}
-for (i = 0; i < personsNumber; i++)
-{
+//         throw new RangeError("It can only be a positive number!");
 
-    console.log(i);
+//     }
+//     else
+//     {
 
-    var personFirst = prompt("Enter first name:");
-    if (personsFirst.length() > 25)
-    {
+//         return personsNumber;
 
-        throw new RangeError("It can only be up to 25 characters");
+//     }
 
-    }
+// }
+// function createPersons(numToCreate)
+// {
 
-    var personLast = prompt("Enter last name:");
-    if (personsLast.length() > 50)
-    {
+//     var persons = [];
 
-        throw new RangeError("It can only be up to 50 characters");
+//     for (i = 0; i < numToCreate; i++)
+//     {
+        
+//         var personFirst = prompt("Enter first name " + i.toString() + " :");
+//         if (personFirst.length > 25)
+//         {
+    
+//             throw new RangeError("It can only be up to 25 characters");
+    
+//         }
+    
+//         var personLast = prompt("Enter last name " + i.toString() + " :");
+//         if (personLast.length > 50)
+//         {
+    
+//             throw new RangeError("It can only be up to 50 characters");
+    
+//         }
+    
+//         var personAge = getPositiveNumber("Enter age " + i.toString() + " :")
+//         if (personAge < 21)
+//         {
+    
+//             throw new RangeError("Age should be larger than 21");
+    
+//         }
+    
+//         var personObject = {firstName: personFirst, lastName: personLast, age: personAge};
 
-    }
+//         persons.push(personObject);
+    
+//     }
 
-    var personAgeStr = prompt("Enter age:");
-    var personsAge = parseInt(personAgeStr);
-    if (personsAge < 21)
-    {
+//     return persons;
 
-        throw new RangeError("Age should be larger than 21");
+// }
+// function main()
+// {
 
-    }
+//     try 
+//     {
 
-}
+//         var numToCreate = getPositiveNumber("How many people would you like to create?");
+//         var persons = createPersons(numToCreate);
+//         console.log(persons);
+
+//         intervalID = setInterval(function() 
+//         {
+
+//             var personToPrint = persons.shift();
+//             console.log(personToPrint);
+
+//             if (!persons.length)
+//             {
+
+//                 clearInterval(intervalID);
+
+//             }
+
+//         }, 2000);
+
+//     }
+//     catch (e)
+//     {
+
+//         console.log(e.message);
+
+//     }
+
+// }
+// main();
